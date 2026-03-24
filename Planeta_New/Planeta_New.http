@@ -1,0 +1,6 @@
+@Planeta_New_HostAddress = http://localhost:5118
+
+GET {{Planeta_New_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
