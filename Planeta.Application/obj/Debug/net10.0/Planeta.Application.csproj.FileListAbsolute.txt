@@ -1,0 +1,6 @@
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.csproj.AssemblyReference.cache
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.AssemblyInfoInputs.cache
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.AssemblyInfo.cs
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.csproj.CoreCompileInputs.cache
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.sourcelink.json

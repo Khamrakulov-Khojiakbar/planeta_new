@@ -26,9 +26,9 @@ public class ProductRepository : IProductRepository
         return product;
     }
 
-    public Task<IEnumerable<Product>> GetAllAsync()
+    public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _dbContext.Products.ToListAsync();
     }
 
     public async Task AddAsync(Product product)

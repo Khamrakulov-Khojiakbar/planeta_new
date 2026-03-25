@@ -9,5 +9,8 @@ public class ProductDto
     public string CategoryName { get; set; } = string.Empty;
     public string? BrandName { get; set; }
     public bool IsUsed { get; set; }
+
+    public string? MainImageUrl { get; set; }
+    
     public List<string> ImageUrls { get; set; } = new();
 }
