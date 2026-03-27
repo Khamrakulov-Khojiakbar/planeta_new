@@ -1,23 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "N/vkCiIhn30=",
+  "dgSpecHash": "1xc6mdogVCQ=",
   "success": true,
-  "projectFilePath": "D:\\Dev\\RiderProjects\\Planeta_New\\Planeta.Application\\Planeta.Application.csproj",
+  "projectFilePath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hamra\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\hamra\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
-    "C:\\Users\\hamra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\hamra\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\hamra\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "D:\\Dev\\RiderProjects\\Planeta_New\\Planeta.Application\\Planeta.Application.csproj",
+      "message": "У пакета \"AutoMapper\" 12.0.1 есть известная уязвимость https://github.com/advisories/GHSA-rvv3-g6hj-g44x (уровень серьезности: высокий уровень)",
+      "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Dev\\RiderProjects\\Planeta_New\\Planeta.Application\\Planeta.Application.csproj",
+      "filePath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net10.0"

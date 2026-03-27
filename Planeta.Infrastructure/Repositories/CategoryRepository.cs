@@ -41,16 +41,25 @@ public class CategoryRepository : ICategoryRepository
 
     public void UpdateAsync(Category category)
     {
-        throw new NotImplementedException();
+        var oldCategory = _dbContext.Categories.FirstOrDefault(c => c.Id == category.Id);
+        
+        oldCategory.Name = category.Name;
+        oldCategory.Products = category.Products;
+        _dbContext.SaveChanges();
+
     }
 
     public void DeleteAsync(Category category)
     {
-        throw new NotImplementedException();
+        var oldCategory = _dbContext.Categories.FirstOrDefault(c => c.Id == category.Id);
+        
+        _dbContext.Categories.Remove(oldCategory);
+        _dbContext.SaveChanges();
     }
 
     public Task SaveChangesAsync()
     {
-        return _dbContext.SaveChangesAsync();
+        _dbContext.SaveChangesAsync();
+        return Task.CompletedTask;
     }
 }

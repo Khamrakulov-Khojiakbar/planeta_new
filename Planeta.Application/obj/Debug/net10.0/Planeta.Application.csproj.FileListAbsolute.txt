@@ -20,3 +20,13 @@ D:\Dev\RiderProjects\Planeta_New\Planeta.Application\obj\Debug\net10.0\Planeta.A
 D:\Dev\RiderProjects\Planeta_New\Planeta.Application\obj\Debug\net10.0\refint\Planeta.Application.dll
 D:\Dev\RiderProjects\Planeta_New\Planeta.Application\obj\Debug\net10.0\Planeta.Application.pdb
 D:\Dev\RiderProjects\Planeta_New\Planeta.Application\obj\Debug\net10.0\ref\Planeta.Application.dll
+E:\Projects\BACKEND\planeta_new\Planeta.Application\bin\Debug\net10.0\Planeta.Application.deps.json
+E:\Projects\BACKEND\planeta_new\Planeta.Application\bin\Debug\net10.0\Planeta.Application.dll
+E:\Projects\BACKEND\planeta_new\Planeta.Application\bin\Debug\net10.0\Planeta.Application.pdb
+E:\Projects\BACKEND\planeta_new\Planeta.Application\bin\Debug\net10.0\Planeta.Domain.dll
+E:\Projects\BACKEND\planeta_new\Planeta.Application\bin\Debug\net10.0\Planeta.Domain.pdb
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta..518E99A7.Up2Date
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.dll
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\refint\Planeta.Application.dll
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\Planeta.Application.pdb
+E:\Projects\BACKEND\planeta_new\Planeta.Application\obj\Debug\net10.0\ref\Planeta.Application.dll

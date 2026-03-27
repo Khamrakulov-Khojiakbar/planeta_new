@@ -373,3 +373,11 @@ D:\Dev\RiderProjects\Planeta_New\Planeta_New\obj\Debug\net10.0\Planeta_New.sourc
 D:\Dev\RiderProjects\Planeta_New\Planeta_New\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Dev\RiderProjects\Planeta_New\Planeta_New\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Dev\RiderProjects\Planeta_New\Planeta_New\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\AutoMapper.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\Planeta.Application.dll
+E:\Projects\BACKEND\planeta_new\Planeta_New\bin\Debug\net10.0\Planeta.Application.pdb
+E:\Projects\BACKEND\planeta_new\Planeta_New\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
