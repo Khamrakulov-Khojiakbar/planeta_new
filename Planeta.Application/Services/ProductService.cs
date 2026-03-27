@@ -1,5 +1,7 @@
-﻿using Planeta.Application.DTOs.Catalog;
+﻿using AutoMapper;
+using Planeta.Application.DTOs.Catalog;
 using Planeta.Application.Interfaces;
+using Planeta.Domain.Entities;
 using Planeta.Domain.Interfaces;
 
 namespace Planeta.Application.Services;
@@ -7,10 +9,12 @@ namespace Planeta.Application.Services;
 public class ProductService : IProductService
 {
     private readonly IProductRepository _productRepository;
+    private readonly IMapper _mapper;
 
-    public ProductService(IProductRepository productRepository)
+    public ProductService(IProductRepository productRepository, IMapper mapper)
     {
         _productRepository = productRepository;
+        _mapper = mapper;
     }
     
     public async Task<IEnumerable<ProductDto>> GetCatalogAsync(int? categoryId, int? brandId, bool? IsUsed)
@@ -34,7 +38,9 @@ public class ProductService : IProductService
             query = query.Where(product => product.IsUsed == IsUsed);
         }
 
-        return query.Select(product => new ProductDto
+        
+        
+        /*return query.Select(product => new ProductDto
         {
             Id = product.Id,
             Name = product.Name,
@@ -46,11 +52,27 @@ public class ProductService : IProductService
             MainImageUrl = product.Images.FirstOrDefault(i => i.IsMain).ImagePath ??
                            product.Images.FirstOrDefault().ImagePath
 
-        }).ToList<ProductDto>();
+        }).ToList<ProductDto>();*/
+        return _mapper.Map<IEnumerable<ProductDto>>(query.ToList());
+        
     }
 
-    public Task<ProductDto> GetByIdAsync(int productId)
+    public async Task<ProductDto> GetByIdAsync(int productId)
     {
-        throw new NotImplementedException();
+        var product = await _productRepository.GetByIdAsync(productId);
+        
+        if (product == null) return null;
+        
+        return  _mapper.Map<ProductDto>(product);
+    }
+
+    public async Task<ProductDto> AddAsync(CreateProductDto createProductDto)
+    {
+        var product = _mapper.Map<Product>(createProductDto);
+        
+        await _productRepository.AddAsync(product);
+        await _productRepository.SaveChangesAsync();
+        
+        return _mapper.Map<ProductDto>(product);
     }
 }

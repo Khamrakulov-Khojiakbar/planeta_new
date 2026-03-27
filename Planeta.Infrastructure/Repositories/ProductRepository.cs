@@ -28,7 +28,11 @@ public class ProductRepository : IProductRepository
 
     public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        return await _dbContext.Products.ToListAsync();
+        return await _dbContext.Products
+            .Include(p => p.Category) // Чтобы было имя категории
+            .Include(p => p.Brand)    // Чтобы был бренд
+            .Include(p => p.Images)   // Чтобы были фото
+            .ToListAsync();
     }
 
     public async Task AddAsync(Product product)

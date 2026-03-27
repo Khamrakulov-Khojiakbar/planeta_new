@@ -1,6 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Planeta.Application.Interfaces;
+using Planeta.Application.Mappings;
+using Planeta.Application.Services;
 using Planeta.Domain.Interfaces;
 using Planeta.Infrastructure.Persistence;
 using Planeta.Infrastructure.Repositories;
@@ -17,6 +21,12 @@ public static class InfrastructureExtensions
             options.UseNpgsql(connectionString));
 
         services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IProductService, ProductService>();
+        
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        
+        services.AddAutoMapper(typeof(MappingProfile));
         
 
         return services;

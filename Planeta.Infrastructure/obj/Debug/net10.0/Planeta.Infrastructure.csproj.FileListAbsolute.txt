@@ -125,3 +125,6 @@ E:\Projects\BACKEND\planeta_new\Planeta.Infrastructure\obj\Debug\net10.0\refint\
 E:\Projects\BACKEND\planeta_new\Planeta.Infrastructure\obj\Debug\net10.0\Planeta.Infrastructure.pdb
 E:\Projects\BACKEND\planeta_new\Planeta.Infrastructure\obj\Debug\net10.0\Planeta.Infrastructure.genruntimeconfig.cache
 E:\Projects\BACKEND\planeta_new\Planeta.Infrastructure\obj\Debug\net10.0\ref\Planeta.Infrastructure.dll
+D:\Dev\RiderProjects\Planeta_New\Planeta.Infrastructure\bin\Debug\net10.0\Planeta.Application.dll
+D:\Dev\RiderProjects\Planeta_New\Planeta.Infrastructure\bin\Debug\net10.0\Planeta.Application.pdb
+D:\Dev\RiderProjects\Planeta_New\Planeta.Infrastructure\obj\Debug\net10.0\Planeta.Infrastructure.sourcelink.json
