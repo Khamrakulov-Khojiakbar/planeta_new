@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Planeta.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09ade7b43896abaabaa066a280a7edd79712449d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22b854ba6d68a3f9e8af893247afdbb7f382bf13")]
 [assembly: System.Reflection.AssemblyProductAttribute("Planeta.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Planeta.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
