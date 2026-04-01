@@ -46,7 +46,7 @@ public class PlanetaDbContext : DbContext
         modelBuilder.Entity<Product>(entity =>
         {
             entity.Property(p => p.Price).HasPrecision(18, 2);
-            entity.Property(p => p.IMEI).HasMaxLength(15);
+            entity.Property(p => p.Imei).HasMaxLength(15);
         });
         
         //order zakaz

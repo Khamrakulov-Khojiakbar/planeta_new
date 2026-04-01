@@ -9,7 +9,7 @@ public interface ICategoryService
     
     Task<CategoryDto> AddCategory(CreateCategoryDto categoryDto);
     Task<CategoryDto> UpdateCategory(CategoryDto categoryDto);
-    void DeleteCategory(CategoryDto categoryDto);
+    Task DeleteCategory(int id);
     
     
 }

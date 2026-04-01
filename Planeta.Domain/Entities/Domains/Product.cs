@@ -11,7 +11,7 @@ public class Product
     
     // for phones
     public bool IsUsed { get; set; }
-    public string IMEI { get; set; }
+    public string? Imei { get; set; } = string.Empty;
 
     public int? BrandId { get; set; }
     public virtual Brand? Brand { get; set; }
