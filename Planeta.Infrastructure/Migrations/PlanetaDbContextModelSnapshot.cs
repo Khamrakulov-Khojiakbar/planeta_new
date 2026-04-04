@@ -227,8 +227,7 @@ namespace Planeta.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("IMEI")
-                        .IsRequired()
+                    b.Property<string>("Imei")
                         .HasMaxLength(15)
                         .HasColumnType("character varying(15)");
 

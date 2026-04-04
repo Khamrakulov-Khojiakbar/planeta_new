@@ -69,6 +69,28 @@ public class ProductService : IProductService
     public async Task<ProductDto> AddAsync(CreateProductDto createProductDto)
     {
         var product = _mapper.Map<Product>(createProductDto);
+
+        if (!string.IsNullOrEmpty(createProductDto.mainImageUrl))
+        {
+            product.Images.Add(new ProductImage
+            {
+                ImagePath =  createProductDto.mainImageUrl,
+                IsMain = true
+            });
+        }
+
+        if (createProductDto.ImageUrls != null)
+        {
+            foreach (var imageUrl in createProductDto.ImageUrls)
+            {
+                product.Images.Add(new ProductImage
+                {
+                    ImagePath = imageUrl,
+                    IsMain = false
+                });
+            }
+        }
+        
         
         await _productRepository.AddAsync(product);
         await _productRepository.SaveChangesAsync();

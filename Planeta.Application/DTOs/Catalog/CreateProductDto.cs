@@ -8,4 +8,6 @@ public record CreateProductDto(
     int? BrandId,
     bool IsUsed,
     string? Imei,
-    int StockQuantity);
+    int StockQuantity,
+    string mainImageUrl,
+    List<string> ImageUrls);

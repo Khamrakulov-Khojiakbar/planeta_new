@@ -18,11 +18,11 @@ public class CategoryService : ICategoryService
         _mapper = mapper;
     }
     
-    public Task<CategoryDto> GetByIdAsync(int categoryId)
+    public async Task<CategoryDto> GetByIdAsync(int categoryId)
     {
-        var category = _repository.GetCategoryByIdAsync(categoryId);
+        var category = await _repository.GetCategoryByIdAsync(categoryId);
         
-        return Task.FromResult(_mapper.Map<CategoryDto>(category));
+        return _mapper.Map<CategoryDto>(category);
     }
 
     public async Task<List<CategoryDto>> GetCategoriesAsync()
@@ -40,13 +40,27 @@ public class CategoryService : ICategoryService
         return _mapper.Map<CategoryDto>(category);
     }
 
-    public Task<CategoryDto> UpdateCategory(CategoryDto categoryDto)
+    public async Task<CategoryDto> UpdateCategory(CategoryDto categoryDto)
     {
-        throw new NotImplementedException();
+        var existingCategory = await _repository.GetCategoryByIdAsync(categoryDto.Id);
+        
+        if (existingCategory == null) return null;
+
+        existingCategory.Name = categoryDto.Name;
+        
+        await _repository.SaveChangesAsync();
+        
+        return _mapper.Map<CategoryDto>(existingCategory);
     }
 
-    public void DeleteCategory(CategoryDto categoryDto)
+    public async Task DeleteCategory(int id)
     {
-        throw new NotImplementedException();
+           var category =  await _repository.GetCategoryByIdAsync(id);
+
+           if (category != null)
+           {
+               _repository.DeleteAsync(category);
+               await _repository.SaveChangesAsync();
+           }
     }
 }

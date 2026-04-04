@@ -31,4 +31,14 @@ public class CategoryController : ControllerBase
         var categories =  await _categoryService.GetCategoriesAsync();
         return Ok(categories);
     }
+
+    [HttpDelete]
+    [Route("/api/deletecategory/")]
+    public async Task<ActionResult<CategoryDto>> DeleteCategory([FromBody]int id)
+    {
+        await _categoryService.DeleteCategory(id);
+        return Ok();
+    }
+    
+    
 }
