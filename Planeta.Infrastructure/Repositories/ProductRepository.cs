@@ -21,6 +21,7 @@ public class ProductRepository : IProductRepository
             .Include(p => p.Images)
             .Include(p => p.Brand)
             .Include(p => p.Category)
+            .Include(p => p.PhoneOptions)
             .FirstOrDefaultAsync(p => p.Id == id);
         
         return product;
@@ -32,6 +33,7 @@ public class ProductRepository : IProductRepository
             .Include(p => p.Category) // Чтобы было имя категории
             .Include(p => p.Brand)    // Чтобы был бренд
             .Include(p => p.Images)   // Чтобы были фото
+            .Include(p => p.PhoneOptions)
             .ToListAsync();
     }
 
@@ -42,7 +44,11 @@ public class ProductRepository : IProductRepository
 
     public void Update(Product product)
     {
-        throw new NotImplementedException();
+        var exsistProduct = _dbContext.Products.FirstOrDefault(p => p.Id == product.Id);
+        if (exsistProduct != null)
+        {
+            
+        }
     }
 
     public void Delete(Product product)

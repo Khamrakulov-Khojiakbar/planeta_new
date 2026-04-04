@@ -8,6 +8,7 @@ public class ProductDto
     public string Description { get; set; } = string.Empty;
     public string CategoryName { get; set; } = string.Empty;
     public string? BrandName { get; set; }
+    public string? StorageInfo { get; set; }
     public bool IsUsed { get; set; }
 
     public string? MainImageUrl { get; set; }
