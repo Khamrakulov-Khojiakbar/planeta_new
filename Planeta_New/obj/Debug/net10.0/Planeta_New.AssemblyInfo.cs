@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Planeta_New")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99d23acd745c95445e96cea8fa3f2d18c5e9b01d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44a72dae1b9fe4996a7feead7d44d1d91518055d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Planeta_New")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Planeta_New")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

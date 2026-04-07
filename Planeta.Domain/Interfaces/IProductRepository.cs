@@ -9,5 +9,7 @@ public interface IProductRepository
     Task AddAsync(Product product);
     void Update(Product product);
     void Delete(Product product);
+    
+    Task<Product?> GetProductWithImagesAsync(int id);
     Task SaveChangesAsync();
 }

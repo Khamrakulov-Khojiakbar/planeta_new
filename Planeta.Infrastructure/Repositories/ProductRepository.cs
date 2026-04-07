@@ -47,13 +47,23 @@ public class ProductRepository : IProductRepository
         var exsistProduct = _dbContext.Products.FirstOrDefault(p => p.Id == product.Id);
         if (exsistProduct != null)
         {
-            
+            _dbContext.Entry(exsistProduct).CurrentValues.SetValues(product);
         }
     }
 
     public void Delete(Product product)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<Product?> GetProductWithImagesAsync(int id)
+    {
+        return await _dbContext.Products
+            .Include(p => p.Images)
+            .Include(p => p.Brand)
+            .Include(p => p.Category)
+            .Include(p => p.PhoneOptions)
+            .FirstOrDefaultAsync(p => p.Id == id);
     }
 
     public async Task SaveChangesAsync()

@@ -66,6 +66,31 @@ public class ProductService : IProductService
         return  _mapper.Map<ProductDto>(product);
     }
 
+    public async Task UpdateProductAsync(int productId, ProductDto productDto)
+    {
+        var existingProduct = await _productRepository.GetProductWithImagesAsync(productId);
+        if(existingProduct == null) return;
+        
+        
+        _mapper.Map(productDto,  existingProduct);
+        
+        
+        existingProduct.Images.Clear();
+
+        foreach (var url in productDto.ImageUrls)
+        {
+            existingProduct.Images.Add(new ProductImage
+            {
+                ImagePath = url,
+                IsMain = (url == productDto.MainImageUrl)
+            });
+        }
+        
+        await _productRepository.SaveChangesAsync();
+        
+    }
+
+
     public async Task<ProductDto> AddAsync(CreateProductDto createProductDto)
     {
         var product = _mapper.Map<Product>(createProductDto);
@@ -96,5 +121,17 @@ public class ProductService : IProductService
         await _productRepository.SaveChangesAsync();
         
         return _mapper.Map<ProductDto>(product);
+    }
+
+    public async Task DeleteAsync(int productId)
+    {
+        var product = await _productRepository.GetByIdAsync(productId);
+        
+        if (product == null)
+            throw new KeyNotFoundException("Product not found");
+        
+        _productRepository.Delete(product);
+        await _productRepository.SaveChangesAsync();
+        
     }
 }
