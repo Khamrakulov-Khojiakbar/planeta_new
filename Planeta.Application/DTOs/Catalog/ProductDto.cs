@@ -1,4 +1,6 @@
-﻿namespace Planeta.Application.DTOs.Catalog;
+﻿using Planeta.Application.DTOs.PhoneOptions;
+
+namespace Planeta.Application.DTOs.Catalog;
 
 public class ProductDto
 {
@@ -12,6 +14,8 @@ public class ProductDto
     public bool IsUsed { get; set; }
 
     public string? MainImageUrl { get; set; }
+    
+    public PhoneOptionsDto? PhoneOptions { get; set; }
     
     public List<string> ImageUrls { get; set; } = new();
 }

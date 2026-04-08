@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Planeta.Application.DTOs.Catalog;
+using Planeta.Application.Exceptions;
 using Planeta.Application.Interfaces;
 using Planeta.Domain.Entities;
 using Planeta.Domain.Interfaces;
@@ -34,6 +35,7 @@ public class CategoryService : ICategoryService
     public async Task<CategoryDto> AddCategory(CreateCategoryDto categoryDto)
     {
         var category = _mapper.Map<Category>(categoryDto);
+        
         await _repository.AddAsync(category);
         await _repository.SaveChangesAsync();
         
@@ -57,10 +59,12 @@ public class CategoryService : ICategoryService
     {
            var category =  await _repository.GetCategoryByIdAsync(id);
 
-           if (category != null)
+           if (category == null)
            {
-               _repository.DeleteAsync(category);
-               await _repository.SaveChangesAsync();
+               throw new CategoryNotFoundException(id);
            }
+           
+           _repository.DeleteAsync(category);
+           await _repository.SaveChangesAsync();
     }
 }

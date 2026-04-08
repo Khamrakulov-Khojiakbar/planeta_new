@@ -209,6 +209,32 @@ namespace Planeta.Infrastructure.Migrations
                     b.ToTable("OrderItems");
                 });
 
+            modelBuilder.Entity("Planeta.Domain.Entities.PhoneOptions", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BatteryCapacity")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("BatteryHealth")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Capacity")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PhoneOptions");
+                });
+
             modelBuilder.Entity("Planeta.Domain.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -227,7 +253,7 @@ namespace Planeta.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Imei")
+                    b.Property<string>("IMEI")
                         .HasMaxLength(15)
                         .HasColumnType("character varying(15)");
 
@@ -237,6 +263,9 @@ namespace Planeta.Infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int?>("PhoneOptionsId")
+                        .HasColumnType("integer");
 
                     b.Property<decimal>("Price")
                         .HasPrecision(18, 2)
@@ -250,6 +279,8 @@ namespace Planeta.Infrastructure.Migrations
                     b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("PhoneOptionsId");
 
                     b.ToTable("Products");
                 });
@@ -336,9 +367,15 @@ namespace Planeta.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Planeta.Domain.Entities.PhoneOptions", "PhoneOptions")
+                        .WithMany()
+                        .HasForeignKey("PhoneOptionsId");
+
                     b.Navigation("Brand");
 
                     b.Navigation("Category");
+
+                    b.Navigation("PhoneOptions");
                 });
 
             modelBuilder.Entity("Planeta.Domain.Entities.ProductImage", b =>

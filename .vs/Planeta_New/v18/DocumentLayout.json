@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Projects\\BACKEND\\planeta_new\\",
+  "WorkspaceRootPath": "D:\\Dev\\RiderProjects\\Planeta_New\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438D42ED-5E85-4757-8659-1242C46DB814}|Planeta_New\\Planeta_New.csproj|e:\\projects\\backend\\planeta_new\\planeta_new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{438D42ED-5E85-4757-8659-1242C46DB814}|Planeta_New\\Planeta_New.csproj|d:\\dev\\riderprojects\\planeta_new\\planeta_new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{438D42ED-5E85-4757-8659-1242C46DB814}|Planeta_New\\Planeta_New.csproj|solutionrelative:planeta_new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,15 +18,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\Program.cs",
+              "DocumentMoniker": "D:\\Dev\\RiderProjects\\Planeta_New\\Planeta_New\\Program.cs",
               "RelativeDocumentMoniker": "Planeta_New\\Program.cs",
-              "ToolTip": "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\Program.cs",
+              "ToolTip": "D:\\Dev\\RiderProjects\\Planeta_New\\Planeta_New\\Program.cs",
               "RelativeToolTip": "Planeta_New\\Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

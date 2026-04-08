@@ -33,11 +33,11 @@ public class CategoryController : ControllerBase
     }
 
     [HttpDelete]
-    [Route("/api/deletecategory/")]
-    public async Task<ActionResult<CategoryDto>> DeleteCategory([FromBody]int id)
+    [Route("/api/deletecategory/{id}")]
+    public async Task<ActionResult<CategoryDto>> DeleteCategory(int id)
     {
         await _categoryService.DeleteCategory(id);
-        return Ok();
+        return NoContent();
     }
     
     

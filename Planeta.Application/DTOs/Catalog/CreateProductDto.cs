@@ -8,6 +8,7 @@ public record CreateProductDto(
     int? BrandId,
     bool IsUsed,
     string? Imei,
+    Domain.Entities.PhoneOptions? PhoneOptions,
     int StockQuantity,
     string mainImageUrl,
     List<string> ImageUrls);

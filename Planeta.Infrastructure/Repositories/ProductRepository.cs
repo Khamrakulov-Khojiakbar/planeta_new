@@ -24,6 +24,9 @@ public class ProductRepository : IProductRepository
             .Include(p => p.PhoneOptions)
             .FirstOrDefaultAsync(p => p.Id == id);
         
+        if (product == null)
+            throw new KeyNotFoundException("Product not found");
+        
         return product;
     }
 

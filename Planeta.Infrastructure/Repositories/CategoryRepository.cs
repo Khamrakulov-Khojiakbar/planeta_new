@@ -51,9 +51,7 @@ public class CategoryRepository : ICategoryRepository
 
     public void DeleteAsync(Category category)
     {
-        var oldCategory = _dbContext.Categories.FirstOrDefault(c => c.Id == category.Id);
-        
-        _dbContext.Categories.Remove(oldCategory);
+        _dbContext.Categories.Remove(category);
         _dbContext.SaveChanges();
     }
 
