@@ -53,7 +53,11 @@ public class ProductRepository : IProductRepository
 
     public void Delete(Product product)
     {
-        throw new NotImplementedException();
+        if(product == null)
+            throw new ArgumentNullException(nameof(product));
+        
+        _dbContext.Remove(product);
+        _dbContext.SaveChanges();
     }
 
     public async Task<Product?> GetProductWithImagesAsync(int id)
