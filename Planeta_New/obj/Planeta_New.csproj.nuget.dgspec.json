@@ -1,40 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\Planeta_New.csproj": {}
+    "/Users/khojiakbar/Desktop/planeta_new/Planeta_New/Planeta_New.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj": {
+    "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/Planeta.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj",
+        "projectUniqueName": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/Planeta.Application.csproj",
         "projectName": "Planeta.Application",
-        "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\obj\\",
+        "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/Planeta.Application.csproj",
+        "packagesPath": "/Users/khojiakbar/.nuget/packages/",
+        "outputPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/khojiakbar/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj": {
-                "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj"
+              "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj": {
+                "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj"
               }
             }
           }
@@ -76,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -354,29 +347,22 @@
         }
       }
     },
-    "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj": {
+    "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj",
+        "projectUniqueName": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj",
         "projectName": "Planeta.Domain",
-        "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\obj\\",
+        "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj",
+        "packagesPath": "/Users/khojiakbar/.nuget/packages/",
+        "outputPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/khojiakbar/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -416,7 +402,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -694,40 +680,33 @@
         }
       }
     },
-    "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Infrastructure\\Planeta.Infrastructure.csproj": {
+    "/Users/khojiakbar/Desktop/planeta_new/Planeta.Infrastructure/Planeta.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Infrastructure\\Planeta.Infrastructure.csproj",
+        "projectUniqueName": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Infrastructure/Planeta.Infrastructure.csproj",
         "projectName": "Planeta.Infrastructure",
-        "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Infrastructure\\Planeta.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Infrastructure\\obj\\",
+        "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Infrastructure/Planeta.Infrastructure.csproj",
+        "packagesPath": "/Users/khojiakbar/.nuget/packages/",
+        "outputPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Infrastructure/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/khojiakbar/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj": {
-                "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Application\\Planeta.Application.csproj"
+              "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/Planeta.Application.csproj": {
+                "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/Planeta.Application.csproj"
               },
-              "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj": {
-                "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Domain\\Planeta.Domain.csproj"
+              "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj": {
+                "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Domain/Planeta.Domain.csproj"
               }
             }
           }
@@ -775,7 +754,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1053,37 +1032,30 @@
         }
       }
     },
-    "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\Planeta_New.csproj": {
+    "/Users/khojiakbar/Desktop/planeta_new/Planeta_New/Planeta_New.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\Planeta_New.csproj",
+        "projectUniqueName": "/Users/khojiakbar/Desktop/planeta_new/Planeta_New/Planeta_New.csproj",
         "projectName": "Planeta_New",
-        "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\Planeta_New.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta_New\\obj\\",
+        "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta_New/Planeta_New.csproj",
+        "packagesPath": "/Users/khojiakbar/.nuget/packages/",
+        "outputPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta_New/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/khojiakbar/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Infrastructure\\Planeta.Infrastructure.csproj": {
-                "projectPath": "E:\\Projects\\BACKEND\\planeta_new\\Planeta.Infrastructure\\Planeta.Infrastructure.csproj"
+              "/Users/khojiakbar/Desktop/planeta_new/Planeta.Infrastructure/Planeta.Infrastructure.csproj": {
+                "projectPath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Infrastructure/Planeta.Infrastructure.csproj"
               }
             }
           }
@@ -1144,7 +1116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
