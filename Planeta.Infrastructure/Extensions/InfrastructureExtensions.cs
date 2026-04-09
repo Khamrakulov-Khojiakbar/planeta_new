@@ -26,6 +26,9 @@ public static class InfrastructureExtensions
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<ICategoryService, CategoryService>();
         
+        services.AddScoped<IBrandRepository, BrandRepository>();
+        services.AddScoped<IBrandService, BrandService>();
+        
         services.AddAutoMapper(typeof(MappingProfile));
         
 

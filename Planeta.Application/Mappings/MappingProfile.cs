@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Planeta.Application.DTOs.Brand;
 using Planeta.Application.DTOs.Catalog;
 using Planeta.Domain.Entities;
 
@@ -22,6 +23,9 @@ public class MappingProfile : Profile
         
         CreateMap<CategoryDto, Category>().ReverseMap();
         CreateMap<CreateCategoryDto, Category>().ReverseMap();
+        
+        CreateMap<BrandDto,  Brand>().ReverseMap();
+        CreateMap<CreateBrandDto, Brand>().ReverseMap();
 
 
     }
