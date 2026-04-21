@@ -66,7 +66,7 @@ public class ProductService : IProductService
         return  _mapper.Map<ProductDto>(product);
     }
 
-    public async Task UpdateProductAsync(int productId, ProductDto productDto)
+    public async Task UpdateProductAsync(int productId, UpdateProductDto productDto)
     {
         var existingProduct = await _productRepository.GetProductWithImagesAsync(productId);
         if(existingProduct == null) return;

@@ -58,10 +58,6 @@ public class PlanetaDbContext : DbContext
             .Property(oi => oi.PriceAtPurchase)
             .HasPrecision(18, 2);
 
-        modelBuilder.Entity<Product>()
-            .HasOne(p => p.PhoneOptions)
-            .WithOne(o => o.Product)
-            .HasForeignKey<Product>(p => p.PhoneOptionsId);
 
 
     }

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Planeta.Application.DTOs.Brand;
 using Planeta.Application.DTOs.Catalog;
+using Planeta.Application.DTOs.PhoneOptions;
 using Planeta.Domain.Entities;
 
 namespace Planeta.Application.Mappings;
@@ -27,6 +28,10 @@ public class MappingProfile : Profile
         CreateMap<BrandDto,  Brand>().ReverseMap();
         CreateMap<CreateBrandDto, Brand>().ReverseMap();
 
+        CreateMap<PhoneOptionsDto, PhoneOptions>().ReverseMap();
 
+        CreateMap<UpdateProductDto, Product>()
+            .ForMember(dest => dest.Images, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
     }
 }

@@ -34,7 +34,10 @@ public class ProductController : ControllerBase
     {
         var product = await _productService.GetByIdAsync(productId);
         
-        if (product == null) return null;
+        if (product == null)
+        {
+            return NotFound($"Product with id {productId} not found");
+        }
         
         return Ok(product);
     }
@@ -50,6 +53,22 @@ public class ProductController : ControllerBase
         
         return Ok(result);
     }
-    
+
+    [HttpPut]
+    [Route("api/updateproduct/{productId}")]
+    public async Task<ActionResult<UpdateProductDto>> UpdateProduct(int productId, [FromBody] UpdateProductDto updateProductDto)
+    {
+        try
+        {
+            await _productService.UpdateProductAsync(productId, updateProductDto);
+
+            return Ok(new { message = "Product is updated successfully" });
+        }
+        catch (Exception e)
+        {
+            return NotFound(e.Message);
+        }
+        
+    }
     
 }

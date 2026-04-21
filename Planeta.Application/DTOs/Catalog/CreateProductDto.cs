@@ -1,4 +1,6 @@
-﻿namespace Planeta.Application.DTOs.Catalog;
+﻿using Planeta.Application.DTOs.PhoneOptions;
+
+namespace Planeta.Application.DTOs.Catalog;
 
 public record CreateProductDto(
     string Name,
@@ -8,7 +10,7 @@ public record CreateProductDto(
     int? BrandId,
     bool IsUsed,
     string? Imei,
-    Domain.Entities.PhoneOptions? PhoneOptions,
+    PhoneOptionsDto? PhoneOptions,
     int StockQuantity,
     string mainImageUrl,
     List<string> ImageUrls);

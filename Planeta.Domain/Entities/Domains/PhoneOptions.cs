@@ -9,6 +9,4 @@ public class PhoneOptions
     public int BatteryHealth { get; set; } = 100;
     public int BatteryCapacity { get; set; }
     
-    public int? ProductId { get; set; }
-    public virtual Product? Product { get; set; }
 }
