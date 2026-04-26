@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QBCBpC1ISec=",
+  "dgSpecHash": "67dR2JYwUG4=",
   "success": true,
   "projectFilePath": "/Users/khojiakbar/Desktop/planeta_new/Planeta.Application/Planeta.Application.csproj",
   "expectedPackageFiles": [
     "/Users/khojiakbar/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/khojiakbar/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/khojiakbar/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512",
     "/Users/khojiakbar/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/khojiakbar/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/khojiakbar/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512"
